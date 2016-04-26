@@ -1,0 +1,134 @@
+@charset "utf-8";
+a.button:visted {
+	color:black;
+}
+body {
+	margin-left: 15%;
+	margin-right: 15%;
+	background-image: -webkit-linear-gradient(270deg,rgba(2,185,251,1.00) 0%,rgba(95,230,93,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(2,185,251,1.00) 0%,rgba(95,230,93,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(2,185,251,1.00) 0%,rgba(95,230,93,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(2,185,251,1.00) 0%,rgba(95,230,93,1.00) 100%);
+	height: 100%;
+}
+#mainLogo {
+	margin-top: -10px;
+
+}
+a:active {
+	color: #02BCFC;
+}
+nav {
+	background-image: -webkit-linear-gradient(270deg,rgba(1,155,212,1.00) 69.43%,rgba(118,249,64,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(1,155,212,1.00) 69.43%,rgba(118,249,64,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(1,155,212,1.00) 69.43%,rgba(118,249,64,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(1,155,212,1.00) 69.43%,rgba(118,249,64,1.00) 100%);
+	right: 0px;
+	left: 0px;
+	margin-top: -20px;
+	height: 60px;
+	background-color: #BABABA;
+	padding-top: 15px;
+}
+
+nav li:hover  {
+	list-style: none;
+	display: inline;
+	border: 2px solid #B1B1B1;
+	border-radius: 2px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	background-color: #D7D7D7;
+}
+a.button:link {
+	text-decoration:none;
+	color:black;
+}
+
+a.button:hover {
+	color: white;
+	background-color: #D7D7D7;
+}
+a.button:visted {
+	color:black;
+}
+a.button:active {
+	color:#790000
+}
+nav ul {
+	min-width: 450px;
+	text-decoration: inherit;
+	color: #FFFFFF;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+nav li {
+	list-style: none;
+	display: inline;
+	border: 2px solid #B1B1B1;
+	border-radius: 2px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+#main {
+	border-left: 2px solid #000000;
+	border-right: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	border-top: 2px solid #000000;
+	background-color: #FFFFFF;
+	padding-top: 20px;
+	margin-left: 0px;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-bottom: 5%;
+}
+
+
+
+.picture.box {
+	width: 220px;
+	float: left;
+	margin-left: 10px;
+}
+#pictureBoxTop {
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1 {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align: center;
+	color: #02BAFB;
+	text-decoration: underline;
+}
+p {
+	text-align: justify;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	margin-left: 0px;
+}
+h3 {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align: center;
+}
+
+
+
+
+
+h4 {
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+h5 {
+	clear: both;
+	text-align: right;
+}
+.picture.box img {
+	margin-left: 10px;
+}
