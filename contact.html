@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link href="mainstyles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- Below is the JS for our form validation -->
+<script>
+function checkForm() {
+    var x = document.forms["myForm"]["firstname"].value;
+    if (x == null || x == "") {
+        alert("First name must be filled out");
+        return false;
+	var x = document.forms["myForm"]["lastname"].value;
+    if (x == null || x == "") {
+        alert("First name must be filled out");
+        return false;
+	var x = document.forms["myForm"]["email"].value;
+    if (x == null || x == "") {
+        alert("First name must be filled out");
+        return false;
+	var x = document.forms["myForm"]["tel"].value;
+    if (x == null || x == "") {
+        alert("First name must be filled out");
+        return false;
+</script>
+
+<!-- The following regards the top navigation menu -->
+
+<div id="brologo"><img src="brohomelogo.png" width="45" height="" alt=""/><h1>Barrier Reef Orchestra</h1></div>
+<ul class="navmenu">
+	<li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+	<li><a href="aboutus.html">About Us</a></li>
+    <li><a href="sponsors.html">Sponsors</a></li>
+	<li><a class="active" href="contact.html">Contact</a></li>
+    <li class="right"><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Buy Tickets</a></li>
+	<li class="right"><a href="signup.html">Sign-Up</a></li>
+</ul>
+
+<section id="maincontent">
+<!-- The following regards the Contact Form -->
+<h2>Contact Form</h2>
+<br>
+<section id="contactform">
+<form onsubmit="return checkForm();" 
+action="https://docs.google.com/spreadsheets/d/1L99EZEK1QlFTVubNztp6TwTOIVizYqogxMkHEZtzYhA/edit#gid=0" 
+id="contactForm" name="contactForm" method="post">
+	First Name:* <input type="firstName" name="firstname" required><br><br>
+    Last Name:* <input type="lastName" name="lastname" required><br><br>
+    E-mail Address:* <input type="email" name="email" required><br><br>
+    Telephone:* <input type="tel" name="tel" required><br><br>
+    <textarea>Coments: </textarea><br><br>
+    <input type="submit">
+</form>
+</section>
+
+
+
+<h6>BarrierReefOrchestra.com</h6>
+</section>
+</body>
+</html>

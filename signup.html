@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign-Up</title>
+<link href="mainstyles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- The following regards the top navigation menu -->
+
+<div id="brologo"><img src="file:///D|/Web Design/brohomelogo.png" width="45" height="" alt=""/><h1>Barrier Reef Orchestra</h1></div>
+<ul class="navmenu">
+	<li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+	<li><a href="aboutus.html">About Us</a></li>
+    <li><a href="sponsors.html">Sponsors</a></li>
+	<li><a href="contact.html">Contact</a></li>
+    <li class="right"><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Buy Tickets</a></li>
+	<li class="right"><a class="active" href="signup.html">Sign-Up</a></li>
+</ul>
+
+<section id="maincontent">
+
+<script>
+function checkForm() {
+    var x = document.forms["membershipForm"]["RenewalOrNew"].value;
+    if (x == null || x == "") {
+        alert("Enter the ");
+        return false;
+	var x = document.forms["membershipForm"]["MembershipType"].value;
+    if (x == null || x == "") {
+        alert("Enter the ");
+        return false;
+	var x = document.forms["membershipForm"]["Title/s"].value;
+    if (x == null || x == "") {
+        alert("Enter the ");
+        return false;
+	var x = document.forms["membershipForm"]["FamilyName"].value;
+    if (x == null || x == "") {
+        alert("Enter the ");
+        return false;
+	var x = document.forms["membershipForm"]["GivenNames"].value;
+    if (x == null || x == "") {
+        alert("Enter the ");
+        return false;
+	var x = document.forms["membershipForm"]["email"].value;
+    if (x == null || x == "") {
+        alert("Enter the ");
+        return false;
+</script>
+
+<form action="https://docs.google.com/spreadsheets/d/1L99EZEK1QlFTVubNztp6TwTOIVizYqogxMkHEZtzYhA/edit#gid=0" id="membershipForm" name="membershipForm" method="post" onsubmit="return checkForm();">
+<h2>Membership Registration</h2><br>
+<p><strong>Are you renewing an old membership or creating a new one? (required)</strong><br>
+  <label>
+    <input type="radio" name="RenewalOrNew" required value="Renewal" id="RenewalOrNew_0">
+    Renewal</label>
+  <br>
+  <label>
+    <input type="radio" name="RenewalOrNew" required value="New" id="RenewalOrNew_1">
+    New</label>
+  <br>
+</p>
+
+<p><strong>Please choose a membership type (required):</strong><br>
+  <label>
+      <input type="radio" name="MembershipType" required value="Adult" id="MembershipType_0">
+      Adult</label>
+    <br>
+    <label>
+      <input type="radio" name="MembershipType" required value="Family" id="MembershipType_1">
+      Family</label>
+    <br>
+    <label>
+      <input type="radio" name="MembershipType" required value="Student" id="MembershipType_2">
+      Student</label>
+    <br>
+    <label>
+      <input type="radio" name="MembershipType" required value="Concession" id="MembershipType_3">
+      Concession</label>
+    <br><br><strong>Membership fees:</strong> Adult: <strong>$30.</strong> Family: <strong>$60.</strong> Full time student: <strong>$15.</strong> Under 18: <strong>$15.</strong> Concession: <strong>$15.</strong><h5>Concession available to persons in receipt of Centrelink pension card. Family membership available to a group of two adults and three persons under the age of 18 all of whom reside at the same address.</h5>
+</p>
+
+<p>Student/Concession identification number (if applicable):<br>
+	<input type="IDNumber">
+</p>
+
+<p><strong>Applicant Details (required):</strong>
+<br>
+Title/s: <input type="Title/s" name="Title/s" required>
+<br><br>
+Family Name: <input type="FamilyName" name="FamilyName" required>
+<br><br>
+Given Names: <input type="GivenNames" name="GivenNames" required>
+<br><br>
+<strong>Children of family membership (if applicable):</strong>
+<br>
+1. <input type="ChildOne"> Date of birth: <input type="DOBOne">
+<br>
+2. <input type="ChildTwo"> Date of birth: <input type="DOBTwo">
+<br>
+3. <input type="ChildThree"> Date of birth: <input type="DOBThree">
+<br><br>
+Address: <input type="Address"> Postcode: <input type="Postcode">
+<br><br>
+Phone No. <input type="Phone"> Mobile: <input type="Mobile">
+<br><br>
+<strong>E-mail (required):</strong> <input type="email" name="email" required>
+<br>
+Do you wish to receive orchestra updates via e-mail? 
+<br>
+  <label>
+    <input type="radio" name="EmailUpdates" value="Yes" id="EmailUpdates_0">
+    Yes</label>
+  <br>
+  <label>
+    <input type="radio" name="EmailUpdates" value="No" id="EmailUpdates_1">
+    No</label>
+  <br>
+</p>
+
+<p>How can you help the Orchestra?
+<br>
+I am interested in:
+<br>
+<label>
+  <input type="checkbox" name="Interests" value="Playing" id="Interests_0">
+  Playing in the Orchestra or Ensembles</label>
+<br>
+<label>
+  <input type="checkbox" name="Interests" value="Management" id="Interests_1">
+  Management/Administration</label>
+<br>
+<label>
+  <input type="checkbox" name="Interests" value="PlayerSupport" id="Interests_2">
+  Player Support</label>
+<br>
+<label>
+  <input type="checkbox" name="Interests" value="Fundraising" id="Interests_3">
+  Fundraising</label>
+<br>
+<label>
+  <input type="checkbox" name="Interests" value="Marketing" id="Interests_4">
+  Marketing/Promotion</label>
+<br>
+<label>
+  <input type="checkbox" name="Interests" value="Sponsorship" id="Interests_5">
+  Sponsorship</label>
+<br>
+<label>
+  <input type="checkbox" name="Interests" value="DesktopPublishing" id="Interests_6">
+  Desktop Publishing</label>
+<br><br>
+<textarea>Other...</textarea>
+</p>
+
+<p>List any qualifications regarding experience and intruments played in a short paragraph:
+<br><br>
+<textarea>Type here...</textarea>
+</p>
+
+<p><strong>Payment</strong> is to be conducted via <strong>direct debit to: NQ Ensembles Inc. BSB 034 22 Account: 17 3033.</strong> Cash is accepted in store however your registration will be withheld until payment is finalised.</p>
+<input type="submit"><input type="reset">
+</form>
+
+<h6>BarrierReefOrchestra.com</h6>
+</section>
+</body>
+</html>
