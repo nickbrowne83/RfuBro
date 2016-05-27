@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>News</title>
+<link href="mainstyles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- The following regards the top navigation menu -->
+
+<div id="brologo"><img src="file:///D|/Web Design/brohomelogo.png" width="45" height="" alt=""/><h1>Barrier Reef Orchestra</h1></div>
+<ul class="navmenu">
+	<li><a href="index.html">Home</a></li>
+    <li><a class="active" href="news.html">News</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+	<li><a href="aboutus.html">About Us</a></li>
+    <li><a href="sponsors.html">Sponsors</a></li>
+	<li><a href="contact.html">Contact</a></li>
+    <li class="right"><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Buy Tickets</a></li>
+	<li class="right"><a href="signup.html">Sign-Up</a></li>
+</ul>
+
+<section id="maincontent">
+<h2>Check Out These Upcoming Events!</h2>
+<!-- The following regards the slide show -->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="homeslide7.png" style="width:100%">
+  <div class="text">Last Night At The Proms</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="homeslide2.png" style="width:100%">
+  <div class="text">Twilight Classics</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="homeslide8.png" style="width:100%">
+  <div class="text">A Musical Feast</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length} ;
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<h2>The Latest Barrier Reef Orchestra Report</h2>
+<h3>Last Updated: November 2015</h3>
+    <p><strong>President’s Report</strong><br> 
+for 2015 AGM North Queensland Ensembles Inc. <br><br>
+
+The Barrier Reef Orchestra is in a sound financial position with concert attendance and revenue from tickets up for 2013.
+The Orchestra performed on six occasions over the last 12 months. This included a children’s concert at Riverway featuring music from Harry Potter and Peter and the Wolf. The concert was well received by the audience and the Orchestra got into the mood by dressing up appropriately for their musical characters.<br><br>
+
+Masterworks conducted by Mark Sheills and featuring the 2013 Australian Concerto and Vocal Competition winner was performed in September with a follow up performance in the Burdekin. Sadly the Burdekin concert was not well attended despite the best efforts in advertising and extra signage. Last Night of the Proms was performed in November and conducted by Richard McIntyre. As expected the audience join in with the antics. <br><br>
+
+The new year saw the successful season launch at the Pier Restaurant and featured our new harp much to the enjoyment of those present. The Mayor of Townsville, Councillor Jenny Hill, officially launched the 2015 season and spoke of the importance of the Barrier Reef Orchestra to Townsville. Not long after that was Sounds of Romance conducted by Raymond Yong. The issue of parking problems were extreme and the matter was taken up with Council. Hopefully there will not be a repeat performance. <br><br>
+
+The Orchestra was invited to open the Townsville Arts Awards with a cameo performance of the music from Frozen much to the audiences’ pleasure, particularly with the AV accompaniment. The Barrier Reef Orchestra will conduct the second Conducting Workshop at the end of May as it was so successful in 2013. For the rest of the year there is our support to the AFCM concert, our World Music Concert commissioned by the Civic Theatre (a first for BRO), support to DanceNorth with their Twilight performances and lastly a Musical Feast for November. <br><br>
+
+To make all of this happen there is a dynamic and committed committee working away to bring this all together. I thank them all for their magnificent work. My thanks also goes to our major sponsor the Townsville City Council, our generous benefactors and to the Orchestra Manager Sally Frewen-Lord who has found time to run a survey for the musicians to get some feedback on how we do business. Thank you all. <br><br>
+
+Jeff Nielsen has reworked our website and taken great steps forward in producing a functional and relevant website. Jeff is handing it over to the next person to continue the good work, Thanks Jeff. I will be introducing life members later as a way of marking the Barrier Reef Orchestra 15th Anniversary. The Barrier Reef Orchestra has taken the opportunity to be directly involved with the development of the TPAC proposal. I see it as necessary support to all of the arts organisations to promote the need for more performance spaces in Townsville and I would urge you all to visit the website and help spread the word. Simon has injected himself into this project with the usual eye for detail while keeping appraised of the macro developments in Townsville. Thanks Simon for your energy and incisive views on this important project. <br><br>
+
+The 15th anniversary year of BRO has been marked by several approaches to the Orchestra to perform in support of other arts organisations. I take this as a sign of confidence others see in our Orchestra and acceptance of the Barrier Reef Orchestra as Townsville’s resident cultural cornerstone to orchestral music. A fitting milestone for the 15th year of the Barrier Reef Orchestra. </p>
+
+
+<h6>BarrierReefOrchestra.com</h6>
+</section>
+</body>
+</html>

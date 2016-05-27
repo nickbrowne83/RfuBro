@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About Us</title>
+<link href="mainstyles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- The following regards the top navigation menu -->
+
+<div id="brologo"><img src="file:///D|/Web Design/brohomelogo.png" width="45" height="" alt=""/><h1>Barrier Reef Orchestra</h1></div>
+<ul class="navmenu">
+	<li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+	<li><a class="active" href="aboutus.html">About Us</a></li>
+    <li><a href="sponsors.html">Sponsors</a></li>
+	<li><a href="contact.html">Contact</a></li>
+    <li class="right"><a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">Buy Tickets</a></li>
+	<li class="right"><a href="signup.html">Sign-Up</a></li>
+</ul>
+
+<section id="maincontent">
+<h2>The Barrier Reef Orchestra</h2>
+<h3>A North Queensland Icon</h3>
+  <p>The Barrier Reef Orchestra was <strong>formed in Townsville in 2000</strong> after a workshop conducted by <strong>Richard McIntyre from Canberra.</strong> Over the past 15 years it has gone from strength to strength and now <strong>presents three main concerts a year</strong>, as well as smaller concerts such as the children’s concert Peter and the Wolf in 2014. We are a community orchestra, drawing players from a large cross section of the Townsville community and sometimes beyond. All are drawn together by their <strong>great love of orchestral music and desire to provide North Queensland with quality performances.</strong> Depending on the program up to 50 musicians play a wide ranging repertoire which has included some of the great orchestral compositions such as the <strong>New World Symphony by Dvorak</strong> and most of the <strong>Beethoven</strong> symphonies as well as <strong>Tchaikovsky and Bizet.</strong> <br><br>
+    
+<strong>In 2015 the orchestra was invited to perform in three festivals</strong>, joining with the <strong>AFCM</strong> to present a <strong>free public concert</strong> in Queens Garden the 1812; Dancenorth at Jezzine Barracks for Twilight and featured in World Music as part of the Townsville Civic Theatre music season. <strong>This was a first for the orchestra</strong> - underscoring its value to the community and highlighting its continued prominence in the cultural soundscape of North Queensland. <br><br>
+
+<strong>Now to 2016</strong> which is going to be a stellar year for your Orchestra. Already we have our <strong>three major concerts</strong> which will include <strong>opera, featuring Paul Tabone</strong> born in Ingham, but now working the international stage as a tenor based in Italy. <strong>Rachmaninov’s Piano Concerto No.2</strong> featuring last year’s winner of the instrumental section of the ACVC, <strong>Arthur Athan.</strong> Our opening performance titled Dreams and Dances is sure to have some favourites such as Afternoon of a Fawn by Debussy.<br><br> 
+
+We are also pleased to be part of the <strong>Townsville 150 Concert</strong> where we will share the stage with the likes of David Campbell, Luke Kennedy, Bronwyn Douglas and the 1 RAR Band just to name a few of the guests. We will be back to <strong>Queens Gardens</strong> for a repeat performance as part of AFCM due to the huge popularity of last year’s concert.
+</p>
+    
+<h2>Get to know the Faces</h2>
+<h3>Special Guests</h3>
+
+<div class="responsive">
+  <div class="img">
+      <img src="AdamLopez.jpg" alt="Adam Lopez (Vocal)" width="300" height="200">
+    <div class="desc">Adam Lopez (vocal)</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="img">
+    <img src="domenico.jpg" alt="Domenico Taraborrelli (Accordion)" width="300" height="200">
+    <div class="desc">Domenico Taraborrelli</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <img src="RaymondYong200.jpg" alt="Raymond Yong (Conductor)" width="300" height="200">
+    <div class="desc">Raymond Yong (Conductor)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <img src="LeahLi250.jpg" alt="Leah Li (Harp)" width="300" height="200">
+    <div class="desc">Leah Li (Harp)</div>
+  </div>
+</div>
+<br>
+
+<div class="clearfix"></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+// Get all images and insert the clicked image inside the modal
+// Get the content of the image description and insert it inside the modal image caption
+var images = document.getElementsByTagName('img');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var i;
+for (i = 0; i < images.length; i++) {
+   images[i].onclick = function(){
+       modal.style.display = "block";
+       modalImg.src = this.src;
+       modalImg.alt = this.alt;
+       captionText.innerHTML = this.nextElementSibling.innerHTML;
+   }
+}
+</script>
+
+<section id="lifemembers">
+<h2>Life Members</h2>
+<div class="responsive">
+  <div class="img">
+      <img src="jacinta-web.jpg" alt="Jacinta Payne" width="300" height="200">
+    <div class="desc">Jacinta Payne</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <img src="alan-web.jpg" alt="Alan Nixon" width="300" height="200">
+    <div class="desc">Alan Nixon</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <img src="stephen-web.jpg" alt="Stephen Frewen-Lord" width="300" height="200">
+    <div class="desc">Stephen Frewen-Lord</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <img src="jenny-web.jpg" alt="Jenny Carr" width="300" height="200">
+    <div class="desc">Jenny Carr</div>
+  </div>
+</div>
+<br>
+
+<div class="clearfix"></div>
+</section>
+
+<h6>BarrierReefOrchestra.com</h6>
+</section>
+</body>
+</html>
